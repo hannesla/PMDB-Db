@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import fi.jyu.mit.fxgui.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="215.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ht.fxPmdb.LisaysJaPoistoController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="343.0" minHeight="10.0" prefHeight="343.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="194.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <ListChooser fx:id="listChooserSisalto" rivit="Leonardo DiCaprio&#10;Ellen Page" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <HBox GridPane.rowIndex="1">
+         <children>
+            <Button mnemonicParsing="false" onAction="#lisaaHandler" text="Lisää">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#poistaHandler" text="Poista">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</GridPane>

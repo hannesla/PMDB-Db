@@ -1,0 +1,54 @@
+﻿@https://trac.cc.jyu.fi/projects/ohj2ht/browser/k2016/PMDB = Työ versionhallinnassa
+
+!https://trac.cc.jyu.fi/projects/ohj2ht/wiki/k2016/suunnitelmat/PMDB = Suunnitelma Wikissä
+
+= <h3>Ohjelman suunnitelma SceneBuilderilla</h3>
+kuvat/paaikkuna.png                       = ohjelman pääikkuna (SceneBuilder)
+kuvat/kirjautumisikkuna.png               = sisäänkirjautuminen ohjelman alusta (SceneBuilder)
+kuvat/elokuvanTiedot.png                  = elokuvan tiedot (SceneBuilder)
+kuvat/lisaysJaPoisto.png                  = tietojen poisto tai lisäys
+kuvat/lisaa.png                           = kun lisataan laatikkoon, johon voi tulla useampi tieto
+                                          
+= <h3>Ohjelman suunnitelma käsin piirretyt</h3>
+kuvat/kirjautuminenk.jpg                  = kirjautumisikkuna (kp)
+kuvat/lisaaminenk.png                     = elokuvan lisäämisikkuna (kp)
+kuvat/paaikkunak.jpg                      = elokuvan pääikkuna (kp)
+                                          
+= <h3>Ajettava ohjelma</h3>               
+pmdb.jar                                  = ajettava ohjelma
+
+= <h3>Tietorakenteiden käsittely koodissa</h3>
+src/ht/kokoelma/Elokuva.java                 = Elokuva -luokka
+src/ht/kokoelma/Elokuvat.java				 = Elokuvat -luokka
+src/ht/kokoelma/Henkilo.java				 = Henkilo -luokka
+src/ht/kokoelma/Henkilot.java				 = Henkilot -luokka
+src/ht/kokoelma/Relaatio.java                = Relaatio -luokka
+src/ht/kokoelma/Relaatiot.java               = Relaatiot -luokka
+src/ht/kokoelma/Rooli.java                   = Rooli -luokka
+src/ht/kokoelma/Roolit.java                  = Roolit -luokka
+src/ht/kokoelma/Kokoelma.java                = Kokoelma -luokka
+src/ht/kokoelma/SailoException.java          = SailoException -luokka
+src/ht/kanta/ElokuvaTarkistus.java           = ElokuvaTarkistus -luokka
+src/ht/kanta/Kanta.java                      = Käytetään yhteydenluontiin tietokantaan
+   
+= <h3>Luokat ja tietorakenteet</h3>
+!https://trac.cc.jyu.fi/projects/ohj2ht/wiki/k2016/suunnitelmat/pmdbCRC = CRC-kortit
+kuvat/tietorakenneKuva.png                = Tietorakenne png-tiedostona
+kuvat/tietorakenneKuva.odg                = Tietorakenne LibreOfficen odg-tiedostona
+  
+= <h3>Käyttöliittymän ulkoasu JavaFX:llä</h3>
+src/ht/fxPmdb/PmdbMain.java                 = pääluokka
+src/ht/fxPmdb/PmdbGUIView.fxml              = käyttöliittymä
+src/ht/fxPmdb/PmdbGUIController.java        = käyttöliittymän ohjain
+src/ht/fxPmdb/pmdb.css         			  = tyylitiedosto (ei vielä koskettu)
+src/ht/fxPmdb/KirjautuminenController.java  = Kirjautumisikkunan ohjain                   
+src/ht/fxPmdb/LisaysJaPoistoController.java = Lisäys ja poisoikkunan ohjain                     
+src/ht/fxPmdb/TiedotController.java		  = Elokuvan tiedot ikkunan ohjain
+src/ht/fxPmdb/KirjautuminenView.fxml   	  = Kirjautumisikkunan ulkoasu
+src/ht/fxPmdb/LisaysJaPoistoView.fxml		  = Lisays ja poistoikkunan ulkoasu
+src/ht/fxPmdb/TiedotView.fxml    			  = Elokuvan tiedot ikkunan ulkoasu
+
+= <h3>Muita tiedostoja</h3>               
+.classpath                                = Eclipsen luokkapolku
+.project                                  = Eclipsen projekti
+build.xml                                 = ant-tiedosto                            
